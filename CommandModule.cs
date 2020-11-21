@@ -23,11 +23,12 @@ public class EchoModule : ModuleBase<SocketCommandContext>
         var praises = new Dictionary<string, string>();
 
         praises.Add("niemanden", "Alle doof.");
-        praises.Add("Martin", "Hat er nicht verdient.");
-        praises.Add("Samuel", "Samuel ist einfach der Tollste.");
+        praises.Add("martin", "Hat er nicht verdient.");
+        praises.Add("samuel", "Samuel ist einfach der Tollste.");
+        praises.Add("dich", "Äh. Hm. Weiß nicht.");
         
         var who = praised(name);
-        if (praises.TryGetValue(who, out response))
+        if (praises.TryGetValue(who.ToLower(), out response))
         {
             response = response + " Echt jetzt.";
         } else {
