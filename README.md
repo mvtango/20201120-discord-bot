@@ -2,6 +2,9 @@
 
 Yeah! 17th birthday!
 
+<style>img { float: left; margin-right: 2em; } </style>
+![](screenshot_small.jpg)
+
 ## Install
 
   - Get .NET SDK, install additional packages `Discord.NET` and `Microsoft.Extensions.DependencyInjection`
