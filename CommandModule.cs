@@ -42,7 +42,7 @@ public class EchoModule : ModuleBase<SocketCommandContext>
     }
 
     private string praised(string who) {
-        var result = Regex.Replace(who, "[^A-Za-z-]", "");
+        var result = Regex.Replace(who, "[^ A-Za-z-]", "");
         return result;
 
     }
